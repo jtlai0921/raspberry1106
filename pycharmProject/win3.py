@@ -12,7 +12,7 @@ class LM35App:
 
     def checkTemperature(self):
         print(self.lm35.value * 3.3 * 100)
-        Timer(1, self.checkTemperature()).start()
+        Timer(1, self.checkTemperature).start()
 
 
 if __name__ == "__main__":
